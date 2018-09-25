@@ -10,4 +10,9 @@ require 'pry'
 
 def get_the_values(groceries)
   #code your solution here!
+   itemArray = []
+  groceries.each { |cat , itmArray| 
+    itmArray.each {|item| itemArray << item}
+  }
+  itemArray
 end
